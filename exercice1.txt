@@ -1,0 +1,11 @@
+Fonction estValide(var annee, var mois, var jour)
+	DEBUT
+		SI estValide() = true
+		Renvoyer TRUE
+		FIN SI
+		estValide() = false
+		Renvoyer FALSE 
+		
+	FIN
+
+dateSignature= estValide(2020, 12, 12)
