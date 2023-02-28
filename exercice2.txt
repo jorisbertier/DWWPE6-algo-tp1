@@ -1,5 +1,5 @@
 
-FONCTION dateAvant(var annee1,var mois1,var jour1,var annee2,var mois2,var jour2)
+FONCTION dateAvant(var annee1,var mois1,var jour1,var annee2,var mois2,var jour2) / boolean
     DEBUT
         SI annee1 < annee2
 
@@ -27,9 +27,9 @@ FONCTION memeDate(var annee1,var mois1,var jour1,var annee2,var mois2,var jour2)
     FIN
 
 
-FONCTION estAvant(var annee1, var mois1, var jour1, var annee2, var mois2, var jour2)
+FONCTION estAvant(var annee1, var mois1, var jour1, var annee2, var mois2, var jour2) : integer
     DEBUT
-        # 
+        # <- équivaut à = (écriture en algo)
         Declarer AVANT <- -1
         Declarer APRES <- 0
         Declarer PAREIL <- 1
