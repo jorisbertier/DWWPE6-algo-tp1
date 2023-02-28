@@ -1,0 +1,48 @@
+
+FONCTION dateAvant(var annee1,var mois1,var jour1,var annee2,var mois2,var jour2)
+    DEBUT
+        SI annee1 < annee2
+
+        OU (annee1 = annee2
+        ET mois1 < mois2)
+
+        OU (annee1 = annee2
+        ET mois1 = mois2
+        ET jour1 < jour2)
+        Renvoyer TRUE
+        FINSI
+
+         Renvoyer FALSE
+    FIN
+
+FONCTION memeDate(var annee1,var mois1,var jour1,var annee2,var mois2,var jour2)
+    DEBUT
+        SI annee1 = annee2
+        ET mois1 = mois2
+        ET jour1 = jour2
+            Renvoyer TRUE
+        FINSI
+
+            Renvoyer FALSE
+    FIN
+
+
+FONCTION estAvant(var annee1, var mois1, var jour1, var annee2, var mois2, var jour2)
+    DEBUT
+        # 
+        Declarer AVANT <- -1
+        Declarer APRES <- 0
+        Declarer PAREIL <- 1
+
+        #PAREIL
+        SI memeDate( annee1, mois1, jour1, annee2, mois2, jour2) ALORS
+          RENVOYER PAREIL
+
+        #date1 AVANT date2
+        SI dateAvant() ALORS
+          Renvoyer AVANT
+
+        #date1 APRES date2
+          Renvoyer APRES
+    
+    FIN
