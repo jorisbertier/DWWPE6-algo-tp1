@@ -22,3 +22,5 @@ function memeDate($annee1, $mois1, $jour1, $annee2, $mois2, $jour2) {
 
 echo "Test memeDate: ";
 var_dump(memeDate(2021, 10, 10, 2020, 10, 10));
+
+
